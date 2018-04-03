@@ -1,0 +1,47 @@
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        title Welcome, Login | Register
+        link(rel="stylesheet", href="/css/style.css")
+        link(href="img/favicon.png", rel="shortcut icon")
+        script(src="/js/jquery.min.js")
+    
+    body
+        div.cover
+            div.left-side 
+                p.coverText  SPEAK, 
+                p.coverText  FRIEND, 
+                p.coverText  AND ENTER
+            div.right-side
+                
+                center
+                    img(src="img/logo.png") 
+                    div.tab-container
+                        ul.tab 
+                            li.active-tab#login-tab LOGIN
+                            li#register-tab REGISTER
+                    div.form-container
+                        form(id="login-contents", method="post" action="/login")
+                            input(type="text", placeholder="Username", name="username")
+                            p.error = (log_uname_err===undefined?'': log_uname_err)
+                            input(type="password", placeholder="Password", name="password")
+                            p.error = (log_pass_err===undefined?'': log_pass_err)                       
+                            button(type="submit") Login
+                            p#log-err= (log_err===undefined?'': log_err)
+                        form(id="register-contents", class="hidden", method="post" action="/register")
+                            input(id="reg_name", type="text", placeholder="Name", name="name")
+                            p.error#name-err= (name_err===undefined?'': name_err)
+                            input(id="reg_uname", type="text", placeholder="Username", name="username")
+                            p.error#uname-err= (uname_err===undefined?'': uname_err)
+                            input(id="reg_pass", type="password", placeholder="Password", name="password")
+                            p.error#pass-err= (pass_err===undefined?'': pass_err)
+                            input(id="reg_conpass",type="password", placeholder="Confrim Password", name="repassword")
+                            p.error#conpass-err= (conpass_err===undefined?'': conpass_err)
+                            input(id="reg_email",type="text", placeholder="Email", name="email")
+                            p.error#email-err= (email_err===undefined?'': email_err)
+                            button(type="submit") Register    
+                        p.info#email-err= (message===undefined?'': message)
+                                
+
+        script(src="/js/script.js")

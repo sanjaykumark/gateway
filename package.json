@@ -1,0 +1,22 @@
+{
+  "name": "gateway",
+  "version": "1.0.0",
+  "description": "Assignment for internship - SureServe",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anish",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.2",
+    "jsonwebtoken": "^8.1.1",
+    "multer": "^1.3.0",
+    "mysql": "^2.15.0",
+    "nodemailer": "^4.4.2",
+    "pug": "^2.0.0-rc.4"
+  }
+}

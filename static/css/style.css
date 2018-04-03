@@ -1,0 +1,253 @@
+/* #e74c3c */
+@font-face
+{
+font-family: Raleway;
+src: url('../fonts/Raleway-Regular.ttf');
+font-weight:400;
+}
+@font-face
+{
+font-family: Raleway;
+src: url('../fonts/Raleway-Light.ttf');
+font-weight:300;
+}
+@font-face
+{
+font-family: Raleway;
+src: url('../fonts/Raleway-Bold.ttf');
+font-weight:700;
+}
+*{
+  margin:0;
+  padding:0;
+	font-family:Raleway,Arial;
+}
+body
+{
+	font-family:Raleway,Arial;
+  height: 100%;
+}
+.cover{
+    display: flex;
+    flex-direction: row;
+}
+.left-side{
+    background:url('../img/cover - Copy.jpg');
+    background-size:cover;
+    color: #fff;
+    font-size: 85px;
+    font-weight: 300;
+    justify-content:center;
+	box-sizing:border-box;
+	/*padding:0 2.5%;*/
+    height:100vh;
+    width:65vw;
+}
+.coverText{
+    padding-left: 15%;
+    
+}
+.left-side .coverText:first-child
+{
+   margin-top: 5%;
+}
+.right-side{
+    background-color: #36575e;
+    height:100vh;
+    width:35vw;
+    display: flex;
+    flex-direction: column;
+}
+.right-side img{
+    width: 35%;
+    margin-top:3%; 
+}
+.tab-container
+{
+    display: flex;
+    margin-top: 5%;
+    margin-left: 15%;
+}
+.tab
+{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    
+}
+.tab li
+{
+    list-style: none;
+    cursor: pointer;
+    padding: 5px 0px;
+    text-align: center;
+    width: 50%;
+    color: #fff;
+    font-size: 1.3em;
+}
+.active-tab
+{
+    border-bottom: 3px solid #e74c3c; 
+}
+.form-container
+{
+    margin-top: 5%;
+    
+}
+.form-container input{
+    background-color: #31464b;
+    color: #fff;
+    font-size: 1em;
+    width: 70%;
+    padding: 20px;
+    border: 0; 
+}
+.form-container button{
+    background-color:#e74c3c;
+    color: #fff;
+    border: 0;
+    padding: 15px;
+    width: 78%;
+    font-size: 1em;
+    margin-top:3%;
+}
+.error{
+    min-height:3vh;
+    color:#e74c3c;
+}
+.info{
+   
+    color:#fff;
+}
+.hidden{
+    display: none;
+}
+.header
+{
+    background-color:#36575e;
+    height:12vh;
+    width: 100%;
+}
+.header img
+{
+    float: left;
+    height: 5vh;
+    margin-top: 2%;
+}
+.header a
+{
+    float: right;
+    text-decoration: none;
+    color:#fff;
+    margin: 2%;
+    font-size: 1.1em;
+}
+.header a:hover{
+    color: #e74c3c;
+}
+.footer{
+    display: flex;
+    background-color:#ccc;
+    height:10vh;
+    justify-content: center;
+}
+.content{
+    min-height: 80vh;
+    background: #ddd;
+
+}
+.footer p{
+   color: #fff;   
+}
+.footer a
+{
+    text-decoration: none;
+    color:#fff;
+}
+
+.error-message{
+    min-height: 100vh;
+    display: flex;
+    background-color:#31464b;
+    justify-content: center;
+}
+.error-message span{
+    color: #fff;
+    margin-top: 10%;
+    font-size: 2em;
+}
+.coverImg
+{
+    height:25vh;
+    width: 100%;
+     
+}
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(148, 78, 78, 0.6);
+}
+
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    min-height: 75vh;
+    border: 1px solid #888;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.6s
+}
+
+
+
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+.modal-content form{
+ margin-top: 10%;
+}
+.modal-content input{
+width:50%;
+padding: 20px;
+}
+.modal-content button{
+    width:57%;
+    padding: 20px;
+    margin-top: 2%;
+    }
+    
+.close {
+    color:#e74c3c;
+    float: right;
+    font-size: 2em;
+    font-weight: bold;
+    margin-right: 5%;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}

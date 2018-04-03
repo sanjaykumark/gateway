@@ -1,0 +1,11 @@
+{
+    "DB_HOST":"",
+    "CONNECTION_LIMIT" : ,
+    "DB_USER": "",
+    "DB_PASSWORD": "",
+    "DATABASE": "",
+    "TOKEN_KEY":"",
+    "SERVICE":"",
+    "MAIL_ID":"",
+    "MAIL_PASSWORD":""
+}
